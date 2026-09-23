@@ -2,8 +2,15 @@
 
 Let a language model drive game agents — NPCs, companions, factions, colonies —
 **constrained to actions you explicitly register.** The model picks a behaviour;
-validated, deterministic game code carries it out. Local-first with
-[Ollama](https://ollama.com), with a provider interface for cloud backends.
+validated, deterministic game code carries it out.
+
+### Where the model runs
+
+- **In a shipped game** — inside the game itself, on the player's machine, so players
+  install nothing. The plan is to build on [LLMUnity](https://github.com/undreamai/LLMUnity).
+- **During development** — [Ollama](https://ollama.com), to swap and benchmark models in
+  seconds. Players never need it.
+- **Optionally** — cloud APIs, behind the same provider interface.
 
 ### Why
 
